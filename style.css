@@ -1,10 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-body {
-  position: relative;
+html {
   background: linear-gradient(to bottom right, #699d9e, #63c787);
+}
+
+body {
   margin-left: 40px;
   margin-top: 40px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar {
+  margin-left: -40px;
+  padding: 0px 50px 0px 0px;
+  display: inline;
 }
 
 h1 {
@@ -12,7 +26,7 @@ h1 {
 }
 
 h3 {
-  color: slateblue;
+  color: #78af8e;
 }
 
 aside {
@@ -25,17 +39,73 @@ aside {
   border-radius: 0px 0px 60px 0px;
   margin: 20px 20px 20px 0px;
   padding: 10px;
-  /*box-shadow: -5px 0 0.4em lightgrey;*/
 }
 
-#profile-picture {
+.sky {
+  border-radius: 40px 40px 0px 0px;
+  width: 100%;
+}
+
+.profile-picture {
+  width: 200px;
+  position: relative;
+  top: -120px;
+  padding: -50px 0px 0px 0px;
   background-color: white;
   border: 3px solid white;
-  border-radius: 0px 0px 60px 0px;
-  /*box-shadow: -5px 0 0.4em lightgrey;*/
+  border-radius: 100px;
+  flex-grow: 1;
 }
 
-#background-squares1 {
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 40px;
+  width: 400px;
+  height: 800px;
+  box-shadow: -5px 5px 20px 0px #000000;
+}
+.main-container-name {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  top: -120px;
+}
+
+.linkbox {
+  background-color: white;
+  width: 300px;
+  height: 750px;
+  border-radius: 0px 20px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: -5px 5px 20px 0px #000000;
+  z-index: -2;
+}
+
+.infobox {
+  background-color: white;
+  width: 300px;
+  height: 750px;
+  border-radius: 20px 0px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: -5px 5px 20px 0px #000000;
+  z-index: -2;
+}
+/* ---background-content--- */
+.background-squares1 {
+  border-radius: 40px;
   z-index: -2;
   transform: rotate(-30deg);
   position: absolute;
@@ -47,25 +117,28 @@ aside {
   opacity: 0.5;
 }
 
-.grey-text {
-  color: lightgray;
-  font-weight: bold;
+.background-squares2 {
+  border-radius: 40px;
+  z-index: -2;
+  transform: rotate(40deg);
+  position: absolute;
+  top: 600px;
+  left: 500px;
+  height: 400px;
+  width: 400px;
+  background-color: #699d9e;
+  opacity: 0.5;
 }
 
-#contact {
+.contact {
   font-family: "roboto";
-  font-size: 30px;
+  font-size: 16px;
 }
 
-#external-link {
-  vertical-align: middle;
-  display: inline-block;
+.external-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 150;
   margin-left: 20px;
-}
-
-#nav-bar {
-  display: inline;
-  margin-left: -40px;
-  padding: 0px 50px 0px 0px;
 }
