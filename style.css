@@ -60,24 +60,27 @@ li::marker {
   flex-direction: column;
   background-color: white;
   border-radius: 40px;
-  width: 400px;
+  max-width: 400px;
   height: 800px;
   box-shadow: -5px 5px 20px 0px #000000;
   z-index: 1;
 }
 .main-container-name {
+  width: 100%;
   display: flex;
   align-items: center;
   position: relative;
   flex-direction: column;
   top: -120px;
 }
-
-.nav-bar {
-  margin-left: -0px;
-  padding: 0px 0px 0px 0px;
-  display: inline;
+.contact {
+  width: 400px;
+  position: absolute;
+  bottom: -200px;
+  text-align: center;
+  font-size: 16px;
 }
+
 .nav-bar-list {
   margin-left: -0px;
   padding: 0px 0px 0px 0px;
@@ -89,10 +92,9 @@ li::marker {
 }
 
 .profile-picture {
-  width: 200px;
+  max-width: 200px;
   position: relative;
-  top: -120px;
-  padding: -50px 0px 0px 0px;
+  top: -140px;
   background-color: white;
   border: 3px solid white;
   border-radius: 100px;
@@ -104,13 +106,13 @@ aside > h2 {
   margin-bottom: 0.4rem;
 }
 .linkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: white;
   width: 300px;
   height: 730px;
   border-radius: 0px 20px 20px 0px;
-  display: flex;
-  flex-direction: column; /* Links funktionieren nicht? */
-  justify-content: space-evenly;
   box-shadow: -5px 5px 20px 0px #000000;
   z-index: 0;
 }
@@ -124,24 +126,17 @@ aside > h2 {
 }
 
 .infobox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding-left: 20px;
   padding-right: 15px;
   background-color: white;
   width: 300px;
   height: 730px;
   border-radius: 20px 0px 0px 20px;
-  display: flex;
-  flex-direction: column;
-
-  justify-content: space-evenly;
   box-shadow: -5px 5px 20px 0px #000000;
   z-index: -2;
-}
-
-.contact {
-  text-align: center;
-  font-family: "roboto";
-  font-size: 16;
 }
 
 /* ---background-content--- */
