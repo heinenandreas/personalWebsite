@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 html {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(to bottom right, #699d9e, #63c787);
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -14,19 +20,51 @@ main {
   align-items: center;
   justify-content: center;
 }
-
-.nav-bar {
-  margin-left: -40px;
-  padding: 0px 50px 0px 0px;
-  display: inline;
+p {
+  margin: 5px;
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin: 10px;
+}
+
+h2 {
+  color: #78af8e;
 }
 
 h3 {
   color: #78af8e;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 40px;
+  width: 400px;
+  height: 800px;
+  box-shadow: -5px 5px 20px 0px #000000;
+}
+.main-container-name {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  top: -120px;
+}
+
+.nav-bar {
+  margin-left: -0px;
+  padding: 0px 0px 0px 0px;
+  display: inline;
+}
+.nav-bar-list {
+  margin-left: -0px;
+  padding: 0px 0px 0px 0px;
 }
 
 aside {
@@ -54,26 +92,7 @@ aside {
   background-color: white;
   border: 3px solid white;
   border-radius: 100px;
-  flex-grow: 1;
-}
-
-.main-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  background-color: white;
-  border-radius: 40px;
-  width: 400px;
-  height: 800px;
-  box-shadow: -5px 5px 20px 0px #000000;
-}
-.main-container-name {
-  display: flex;
-  align-items: center;
-  position: relative;
-  flex-direction: column;
-  top: -120px;
+  box-shadow: -5px 5px 10px 0px #000000;
 }
 
 .linkbox {
@@ -82,57 +101,10 @@ aside {
   height: 750px;
   border-radius: 0px 20px 20px 0px;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
+  flex-direction: column; /* Links funktionieren nicht? */
   justify-content: space-evenly;
   box-shadow: -5px 5px 20px 0px #000000;
   z-index: -2;
-}
-
-.infobox {
-  background-color: white;
-  width: 300px;
-  height: 750px;
-  border-radius: 20px 0px 0px 20px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: space-evenly;
-  box-shadow: -5px 5px 20px 0px #000000;
-  z-index: -2;
-}
-/* ---background-content--- */
-.background-squares1 {
-  border-radius: 40px;
-  z-index: -2;
-  transform: rotate(-30deg);
-  position: absolute;
-  top: 120px;
-  left: 300px;
-  height: 200px;
-  width: 200px;
-  background-color: #699d9e;
-  opacity: 0.5;
-}
-
-.background-squares2 {
-  border-radius: 40px;
-  z-index: -2;
-  transform: rotate(40deg);
-  position: absolute;
-  top: 600px;
-  left: 500px;
-  height: 400px;
-  width: 400px;
-  background-color: #699d9e;
-  opacity: 0.5;
-}
-
-.contact {
-  font-family: "roboto";
-  font-size: 16px;
 }
 
 .external-link {
@@ -141,4 +113,50 @@ aside {
   align-items: center;
   height: 150;
   margin-left: 20px;
+}
+
+.infobox {
+  padding-left: 10px;
+  padding-right: 15px;
+  background-color: white;
+  width: 300px;
+  height: 750px;
+  border-radius: 20px 0px 0px 20px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+  box-shadow: -5px 5px 20px 0px #000000;
+  z-index: -2;
+}
+
+.contact {
+  text-align: center;
+  font-family: "roboto";
+  font-size: 16;
+}
+
+/* ---background-content--- */
+.background-squares-properties {
+  border-radius: 40px;
+  z-index: -2;
+  position: fixed;
+  background-color: #699d9e;
+  opacity: 0.5;
+}
+
+.background-squares1 {
+  transform: rotate(-30deg);
+  top: 120px;
+  left: 300px;
+  height: 200px;
+  width: 200px;
+}
+
+.background-squares2 {
+  transform: rotate(40deg);
+  top: 580px;
+  left: 500px;
+  height: 400px;
+  width: 400px;
 }
