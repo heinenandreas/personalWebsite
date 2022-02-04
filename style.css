@@ -48,6 +48,7 @@ h3 {
   width: 400px;
   height: 800px;
   box-shadow: -5px 5px 20px 0px #000000;
+  z-index: 1;
 }
 .main-container-name {
   display: flex;
@@ -96,7 +97,7 @@ aside > h2 {
   flex-direction: column; /* Links funktionieren nicht? */
   justify-content: space-evenly;
   box-shadow: -5px 5px 20px 0px #000000;
-  z-index: -2;
+  z-index: 0;
 }
 
 .external-link {
