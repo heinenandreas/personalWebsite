@@ -92,9 +92,9 @@ li::marker {
   font-weight: bolder;
 }
 
-.contact-button > a:link {
-  color: white;
+.main-container-name > a:link {
   text-decoration: none;
+  color: white;
 }
 
 .contact {
