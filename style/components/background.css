@@ -1,0 +1,47 @@
+.background-squares-properties {
+  border-radius: 40px;
+  z-index: -2;
+  position: fixed;
+  background-color: #699d9e;
+  opacity: 0.5;
+}
+
+.background-squares1 {
+  transform: rotate(-30deg);
+  top: 120px;
+  left: 400px;
+  height: 200px;
+  width: 200px;
+}
+
+.background-squares2 {
+  transform: rotate(40deg);
+  top: 580px;
+  left: 500px;
+  height: 400px;
+  width: 400px;
+}
+
+.background-squares3 {
+  transform: rotate(20deg);
+  top: 580px;
+  left: 150px;
+  height: 150px;
+  width: 150px;
+}
+
+.background-squares4 {
+  transform: rotate(60deg);
+  top: -100px;
+  left: 1100px;
+  height: 350px;
+  width: 350px;
+}
+
+.background-squares5 {
+  transform: rotate(20deg);
+  top: 500px;
+  left: 1300px;
+  height: 500px;
+  width: 500px;
+}
