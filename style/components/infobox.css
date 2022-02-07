@@ -1,0 +1,13 @@
+.infobox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    padding-right: 15px;
+    background-color: white;
+    width: 300px;
+    height: 730px;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: -5px 5px 20px 0px #000000;
+    z-index: -2;
+  }
