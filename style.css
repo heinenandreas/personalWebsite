@@ -15,9 +15,11 @@ main {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
+
 p {
   margin: 5px;
 }
@@ -41,22 +43,25 @@ ul {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
+
 li {
   padding-bottom: 5px;
   list-style-type: square;
   font-family: "roboto";
 }
+
 ul li::marker {
   color: #78af8e;
 }
+
 li::marker {
   color: #78af8e;
 }
 
+/* ---Main Container--- */
 .main-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   flex-direction: column;
   background-color: white;
   border-radius: 40px;
@@ -80,6 +85,8 @@ li::marker {
   height: 35px;
   margin: 10px;
   border-radius: 20px;
+  border: 2px groove #63c787;
+  box-shadow: -2px 2px 5px 0px #000000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,9 +94,9 @@ li::marker {
   font-weight: bolder;
 }
 
-.contact-button > a:link {
-  color: white;
+.main-container-name > a:link {
   text-decoration: none;
+  color: white;
 }
 
 .contact {
@@ -119,6 +126,8 @@ aside > h2 {
   margin-left: 0;
   margin-bottom: 0.4rem;
 }
+
+/* ---Linkbox-Content--- */
 .linkbox {
   display: flex;
   flex-direction: column;
@@ -135,10 +144,20 @@ aside > h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150;
-  margin-left: 20px;
 }
 
+.logo-design {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px groove #63c787;
+  box-shadow: -2px 2px 5px 0px #000000;
+  border-radius: 10px;
+  margin: 20px;
+  height: 100px;
+}
+
+/* ---Infobox--- */
 .infobox {
   display: flex;
   flex-direction: column;
